@@ -1,10 +1,10 @@
 const config = {
     db: {
       /* don't expose password or any sensitive info, done only for demo */
-      host: "db4free.net",
-      user: "daikin_admin",
+      host: "kodeacross-server.mysql.database.azure.com",
+      user: "kodeacrossadmin",
       password: "Comsci10@",
-      database: "daikin_db1",
+      database: "daikin_db",
     },
   };
   module.exports = config;

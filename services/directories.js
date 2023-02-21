@@ -14,9 +14,9 @@ async function getDirectories(id){
 async function createDirectory(directory){
     const result = await db.query(
       `INSERT INTO directories 
-      (id, parentFolderId, name, type) 
+      (id, parentFolderId, name, type, link) 
       VALUES 
-      ("${directory.id}", "${directory.parentFolderId}", "${directory.name}", "${directory.type}")`
+      ("${directory.id}", "${directory.parentFolderId}", "${directory.name}", "${directory.type}", "${directory.link}")`
     );
   
     let message = 'Error in creating Directory';
